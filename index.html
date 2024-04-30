@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="img/LPU.jpg"
+                    alt="" height="50px" width="120%"> <br> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/pictures1.jpg" class="d-block w-100"
+                    alt="pic1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/jerick2.jpg"
+                    class="d-block w-100" alt="pic2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/person3.jpg"
+                    class="d-block w-100" alt="pic3">
+            </div>
+            <div class="carousel-item">
+                <img src="img/tables4.jpg"
+                    class="d-block w-100" alt="pic4">
+            </div>
+            <div class="carousel-item">
+                <img src="img/sleep5.jpg"
+                    class="d-block w-100" alt="pic5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+<bR> <br>
+    
+    <h1 id="works" class="text-center">Works</h1>
+    <div class="container d-flex justify-content-center text-center" style="margin: 10; padding-left: 100px;">
+        <!-- first col start -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" src="https://my.matterport.com/show/?m=i6zmQyTna2U"
+                        width="100%"></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">CHECK IT OUT!</h5>
+                    <p class="card-text">Have a peek at the new Sotero H. Laurel – Academic Resource Center.</p>
+                    <div class="container mt-3">
+                        <h3>Modal 1</h3>
+                        <p>Click on the button!</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal-1">
+                            Click Me
+                        </button>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Modal Heading</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <img src="img/tables4.jpg"
+                                        class="card-img-top" alt="loading">
+                                    <!--Change the img -->
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- first col End -->
+        <!-- second col start -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" src="https://my.matterport.com/show/?m=i6zmQyTna2U"
+                        width="100%"></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">WHAT'S NEW?</h5>
+                    <p class="card-text">The newest enhancement to the facilities of LPU.</p>
+                    <div class="container mt-3">
+                        <h3>Modal 2</h3>
+                        <p>Click on the button!</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal-2">
+                            Click Me
+                        </button>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal-2">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Modal Heading</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <img src="img/jerick2.jpg"
+                                        class="card-img-top" alt="jerick">
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- second col end -->
+
+        <!-- third col start -->
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" src="https://my.matterport.com/show/?m=i6zmQyTna2U"
+                        width="100%"></iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">MODERN</h5>
+                    <p class="card-text">To foster an environment that encourages stimulating learning.</p>
+                    <div class="container mt-3">
+                        <h3>Modal 3</h3>
+                        <p>Click on the button!</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#myModal-3">
+                            Click Me
+                        </button>
+                    </div>
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal-3">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Modal Heading</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <img src="img/person3.jpg"
+                                        class="card-img-top" alt="lpu">
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Third col End -->
+    <h2 id="about" class="text-center pd-5 mt-5 mb-5"><strong>About</strong></h2>
+
+ 
+
+    <div class="container">
+     <div class="row">
+         <div class="col">
+             <div class="card" style="text-align: center;">
+                 <div class="card-body">
+                      <br> "THE SHL ARC BUILDING" </br>
+                     <br>
+                     This library was inaugurated in honor of the late Senator Sotero H. Laurel on September 27, 1989. It embodies his zeal for education, his enlightened sense of nationalism, his unending search for truth, and his lifelong dedication to the Lyceum of the Philippines University.
+                    </br>
+                     <br>Senator Sotero H. Laurel, the fourth child of Dr. Jose P. Laurel, the founding president of Lyceum, held the position of LPU’s second President. He is also the father of Lyceum’s third President, Atty. Roberto P. Laurel.</br> <br>
+
+                     The interior of the building, designed by Studio Mara, draws inspiration from the popular Korean drama series ‘Start-Up’. The design team used a variety of textures and patterns to give each area its own distinct feel. The library boasts color-themed corridors that change with each floor, a large staircase that doubles as a seating area for reading or resting, and spaces that cater to different learning styles.<br> <br>
+
+                     
+                 </div>
+               </div>
+         </div>
+     </div>
+    </div>
+    <h1 id="contacts" class="text-center pd-5 mt-5 mb-5"><strong>Contact</strong></h1>
+<div class="container">
+<div class="row">
+    <div class="col">
+     <form>
+       <div class="mb-3">
+         <label for="exampleInputEmail1" class="form-label">Email address</label>
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+       </div>
+       <div class="mb-3">
+         <label for="exampleInputPassword1" class="form-label">Password</label>
+         <input type="password" class="form-control" id="exampleInputPassword1">
+       </div>
+       <div class="mb-3 form-check">
+         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+       </div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+   </div>
+   <div class="col">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30889.052644529642!2d120.93966447431637!3d14.591577200000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca186baa7b63%3A0xe5d2c0464e5518e3!2sLyceum%20of%20the%20Philippines%20University!5e0!3m2!1sen!2sph!4v1714379615889!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        </div>
+    </div>
+
+
+
+    <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.facebook.com/LPUManila/" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://twitter.com/i/flow/login?redirect_after_login=%2FLPUManila" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://manila.lpu.edu.ph/" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="https://www.instagram.com/lpumanilaofficial/?hl=en" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="https://www.linkedin.com/school/lpu/" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1"
+                    href="https://github.com/AriesMolinar22" role="button" data-mdb-ripple-color="dark"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2020 Copyright:
+            <a class="text-body" href="https://mdbootstrap.com/">Edrianne J, Dimarucut</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
